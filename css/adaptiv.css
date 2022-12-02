@@ -1,0 +1,310 @@
+@media(max-width: 1240px) {
+	.info__text {
+		margin-left: 20px;
+	}
+}
+
+@media(max-width:1050px) {
+	body.lock {
+		overflow: hidden;
+	}
+
+	.header__link {
+		font-size: 28px;
+	}
+
+	.header__body {
+		height: 50px;
+	}
+
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.header__burger span {
+		position: absolute;
+		background-color: #060606;
+		top: 9px;
+		left: 0px;
+		width: 100%;
+		height: 2px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger::before,
+	.header__burger::after {
+		content: '';
+		background-color: #060606;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__burger::before {
+		top: 0;
+	}
+
+	.header__burger::after {
+		bottom: 0;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		overflow: auto;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(204, 195, 195);
+		padding: 70px 10px 20px 10px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.header__menu.active {
+		top: 0;
+	}
+
+	.header__list {
+		display: block;
+	}
+
+	.header__list li {
+		margin: 0 0 20px 0;
+	}
+
+
+	.header__burger.active span {
+		transform: scale(0);
+	}
+
+	.header__burger.active::before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.content {
+		padding: 70px 0 10px;
+	}
+
+	.info {
+		padding: 10px 0 30px;
+	}
+
+	.works {
+		padding: 0 0 20px;
+	}
+
+	.funeral__image {
+		flex-wrap: wrap;
+	}
+
+	.memorial__row {
+		flex-wrap: wrap;
+		margin: 10px 0 0px;
+	}
+
+	.memorial__row-item {
+		margin-bottom: 10px;
+	}
+
+   .cooperation__inner {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.cooperation__form,
+	.cooperation__text {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.cooperation__title {
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width: 953px) {
+	.contacts__inner {
+		display: block;
+		flex-wrap: wrap;
+		max-width: 100%;
+		flex-basis: 100%;
+	}
+
+	.contacts__title {
+		margin: 0;
+	}
+
+	.contacts__img {
+		margin: 10px 0 10px;
+	}
+
+	.contacts__footer-inner {
+		display: block;
+		flex-wrap: wrap;
+		max-width: 100%;
+		flex-basis: 100%;
+		margin-top: 20px;
+	}
+
+	.contacts__footer-text,
+	.contacts__footer-map {
+		max-width: 100%;
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.funeral__image {
+		display: block;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.funeral__image img {
+		max-width: 50%;
+		margin-bottom: 10px;
+	}
+
+	.memorial__works-img {
+		justify-content: center;
+	}
+}
+
+@media(max-width: 805px) {
+	.memorial__row {
+		display: block;
+		margin: 10px 0 0px;
+	}
+
+	.memorial__action {
+		margin: 20px 0 20px;
+	}
+
+	.contacts {
+		padding: 60px 0 20px;
+	}
+
+	.info {
+		padding: 20px 0 20px;
+	}
+
+	.works {
+		padding: 0 0 0px;
+	}
+
+	.funeral {
+		padding: 20px 0 20px;
+	}
+
+	.memorial {
+		padding: 20px 0 20px;
+	}
+	
+	.fences {
+		padding: 20px 0 20px;
+	}
+
+	.papers {
+		padding: 20px 0 20px;
+	}
+
+	.cooperation {
+		padding: 20px 0 20px;
+	}
+}
+
+@media(max-width: 670px) {
+	.info__title,
+	.works__title {
+		font-size: 24px;
+	}
+
+	.info__text {
+		font-size: 18px;
+	}
+
+	.works__item {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.works__text {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.works__image {
+		display:block;
+      margin:auto;
+	}
+
+	.funeral__title,
+	.memorial__title,
+	.fences__title {
+		margin-bottom: 10px;
+	}
+
+	.funeral__list {
+		margin: 0 0 10px 10px;
+	}
+
+	.funeral__text {
+		text-align: center;
+	}
+
+	.funeral__price {
+		margin-top: 20px;
+	}
+
+	.papers__text-text li {
+		margin-left: 30px;
+	}
+}
+
+@media(max-width: 450px) {
+	.contacts__title {
+		font-size: 32px;
+	}
+
+	.works__image {
+		max-width: 80%;
+	}
+
+	.title {
+		font-size: 24px;
+	}
+
+	.funeral__text {
+		font-size: 18px;
+		line-height: 90%;
+	}
+
+	.memorial__row-item {
+		font-size: 14px;
+	}
+
+	.papers__text-none {
+		display: none;
+	}
+
+	.papers__text-text span {
+		font-size: 18px;
+		line-height: 120%;
+	}
+
+	.papers__text-title {
+		margin: 10px 0 10px;
+	}
+}
